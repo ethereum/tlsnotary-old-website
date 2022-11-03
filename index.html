@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="us-ascii">
+	<title>TLSNotary - prove an https page was in your browser</title>
+	<meta name="generator" content="Bootply" /><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link href="css/bootstrap.min.css" rel="stylesheet" />
+	<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet" />
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" /><!--[if lt IE 9]>
+			<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+	<link href="css/styles.css" rel="stylesheet" />
+	<style type="text/css">:root #content > #right > .dose > .dosesingle,
+:root #content > #center > .dose > .dosesingle
+{display:none !important;}
+	</style>
+</head>
+<body>
+<div class="navbar navbar-fixed-top navbar-bold" data-offset-top="1000" data-spy="affix">
+<div class="container"><!-- <div class="navbar-header">
+      <a href="#" class="navbar-brand">TLSNotary</a>
+      <a class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </a>
+    </div> -->
+<div class="navbar-collapse collapse" id="navbar">
+<ul class="nav navbar-nav">
+	<li><a href="https://github.com/tlsnotary/">Code</a></li>
+	<li><a href="how_it_works">How it works</a></li>
+	<li><a href="pagesigner">PageSigner</a></li>
+	<li><a href="contacts.html">Contact</a></li>
+	<li><a href="https://tlsnotary.org/wp">Blog</a></li>
+	<!--<li><a href="https://tlsnotary.org/smf">Discussion forum</a></li>-->
+	<li><a href="#Donate">Donate</a></li>
+</ul>
+</div>
+</div>
+</div>
+
+<div class="blurb pagesigner text-center">
+<div class="container">
+<h1>TLSNotary</h1>
+
+<p class="lead">A new kind of auditing - cryptographic proof of online accounts</p>
+
+<div></div>
+<!-- <a href="https://github.com/tlsnotary/tlsnotary#how-to-install-and-run" class="btn btn-default btn-lg">Try it out</a> --></div>
+</div>
+
+<div class="featurette" id="sec4">
+<div class="container">
+<div class="row">
+<div class="col-md-12 text-center">
+<h1>The technology</h1>
+
+<p></p>
+
+<h2></h2>
+
+<ul>
+	<li>Based on an original algorithm as described in <a href="how_it_works">How it works</a>.</li>
+</ul>
+
+<p></p>
+
+<p></p>
+
+<h2></h2>
+
+<ul>
+	<li>Provides cryptographic proof without <a href="https://en.wikipedia.org/wiki/Man-in-the-middle_attack">MITM</a>-ing your connection.</li>
+</ul>
+
+<p></p>
+
+<p></p>
+
+<h2></h2>
+
+<ul>
+	<li>Install the browser extension <a href="pagesigner">PageSigner</a>, start proving pages with one click.</li>
+</ul>
+
+<p></p>
+
+<p></p>
+
+<h2></h2>
+
+<ul>
+	<li>No need to give login credentials to a third party.</li>
+</ul>
+
+<p></p>
+</div>
+<!--<div class = "col-md-12 text-right">
+         <h2>Stuff</h2>
+</div> --><!--
+<div class="col">one</div>
+    <div class="col">two</div>
+    <div class="col">three</div>
+--></div>
+</div>
+</div>
+
+<div class="blurb" id="sec1">
+<div class="container">
+<div class="row">
+<div class="col-md-8 text-left">
+<h1>What it can do</h1>
+
+<p></p>
+
+<h2></h2>
+
+<ul>
+	<li>Prove your name and address if it&#39;s recorded on a trusted website</li>
+</ul>
+
+<p></p>
+
+<p class="lead"></p>
+
+<h2></h2>
+
+<ul>
+	<li>Prove you received a threatening private message from an internet troll</li>
+</ul>
+
+<p></p>
+
+<p class="lead"></p>
+
+<h2></h2>
+
+<ul>
+	<li>Prove you received a money transfer.</li>
+</ul>
+
+<p></p>
+
+<p class="lead"></p>
+
+<h2></h2>
+
+<ul>
+	<li>Prove your status as an elite trader with something better than a photoshopped statement.</li>
+</ul>
+
+<p></p>
+
+<p class="lead"></p>
+
+<h2></h2>
+
+<ul>
+	<li>Prove that a scammy website doctored the claims on its front page.</li>
+</ul>
+
+<p></p>
+</div>
+</div>
+</div>
+</div>
+
+<div class="featurette" id="sec2">
+<div class="container">
+<div class="row">
+<div class="col-md-12 text-center">
+<h1>PageSigner - the easy way to use TLSNotary</h1>
+</div>
+</div>
+
+<div class="row">
+<div class="col-md-12 text-center">
+<div class="featurette-item"><iframe allowfullscreen="" frameborder="0" height="315" src="https://www.youtube.com/embed/cVknXa1bg2M" width="420"></iframe></div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="blurb" id="sec4">
+<div class="container">
+<div class="row">
+<div class="col-md-12 text-left">
+<h1>A high level technical view of TLSNotary</h1>
+
+<p>This is how the main TLSNotary protocol works; PageSigner has the same core design but with some extra usability features; after you&#39;re finished here, you can read more on that <a href="pagesigner">here</a>.</p>
+
+<p>A user, called the &#39;auditee&#39;, wants to prove to another user, called the &#39;auditor&#39;, a certain fact attested to by an organisation (a bank, a government, a company etc.). This fact could be a monetary balance on an account, the fact of a money transfer, a particular set of identity information such as address, amongst others. The auditor and auditee create an encrypted messaging connection between each other. The auditee connects to the website as normal and logs in, and then browses to the specific page that proves the required information. Then the auditor and auditee use their encrypted connection to negotiate secrets for the SSL/TLS session such that the auditor can find out what is on the page that the auditee loads, without gaining control of the connection or seeing the auditee&#39;s login details. The diagram below gives the outline of what happens.</p>
+<img align="middle" src="/images/walkthrough_diagram_simplified.svg" /></div>
+</div>
+
+<div class="row">The auditee has the full defense against impersonation and eavesdropping that he would have in a normal TLS protected interaction with the server. The differences to a normal TLS connection (marked in green) allow the auditor to nevertheless get irrefutable proof of the content of the server response, for the single response (usually an html page) that the auditee chooses. This process can, and should, occur after the auditee has established his application-level login, and so by logging out before delivering the data, he can render any session cookies invalid.</div>
+
+<div class="row">More details are available in the <a href="how_it_works">How it works</a> document.</div>
+</div>
+</div>
+
+<div class="blurb bright"><!--  <div class="vert">
+    <div class="col-md-12 text-center"><h2>Support Development</h2></div>
+    <div class="col-md-12 text-center">&nbsp;</div>
+    <div class="row">
+    <div class="col-sm-4 col-sm-offset-3">
+         <div class="panel panel-default">
+         <div class="panel-heading text-center"><h2><i class="icon-chevron-right"></i> Donate</h2></div>
+         <script src="js/qrcode.js"></script>
+         <div id="qrcode"></div>
+         <script type="text/javascript">
+         var qrcode = new QRCode(document.getElementById("qrcode"), {
+         text: "367SYUMqo1Fi4tQsycnmCtB6Ces1Z7EZLH",
+         width: 256,
+         height: 256,
+         colorDark : "#000000",
+         colorLight : "#ffffff",
+         correctLevel : QRCode.CorrectLevel.H
+         });
+         </script>
+         </div>
+ 	</div>
+    
+  </div>
+  </div> --><a name="Donate"></a>
+
+<div class="vert">
+<div class="row">
+<div class="col-md-12 text-center">
+<h1>Support Development</h1>
+<script src="js/qrcode.js"></script>
+
+<div align="center" id="qrcode"></div>
+<script type="text/javascript">
+         var qrcode = new QRCode(document.getElementById("qrcode"), {
+         text: "367SYUMqo1Fi4tQsycnmCtB6Ces1Z7EZLH",
+         width: 256,
+         height: 256,
+         colorDark : "#000000",
+         colorLight : "#ffffff",
+         correctLevel : QRCode.CorrectLevel.H
+         });
+         </script></div>
+</div>
+</div>
+
+<div align="center" class="row"><a href="bitcoin:367SYUMqo1Fi4tQsycnmCtB6Ces1Z7EZLH">367SYUMqo1Fi4tQsycnmCtB6Ces1Z7EZLH</a></div>
+</div>
+
+<footer>
+<div class="container">
+<div class="row">
+<div class="col-md-6 col-md-offset-3 text-center">
+<ul class="list-inline">
+	<li></li>
+	<li></li>
+	<li></li>
+	<li></li>
+</ul>
+</div>
+</div>
+</div>
+</footer>
+
+<ul class="nav pull-right scroll-down">
+	<li></li>
+</ul>
+
+<ul class="nav pull-right scroll-top">
+	<li></li>
+</ul>
+<!-- script references --><script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script><script src="js/bootstrap.min.js"></script><script src="js/scripts.js"></script></body>
+</html>

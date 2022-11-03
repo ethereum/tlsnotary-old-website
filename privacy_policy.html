@@ -1,0 +1,24 @@
+Privacy policy.
+
+Definitions:
+Extension - the PageSigner extension for Chromium-based browsers.
+Webserver - a TLS-enabled server which serves a webpage which the user wants to have notarized using the PageSigner extension.
+Notary - a server controlled by the PageSigner developers which acts as the notary for the TLSNotary protocol.
+TLSNotary - a protocol allowing Extension to participate in secure two-party computation with Notary in order to receive a cryptographic proof about the origin of a webpage served by Webserver. The protocol is designed in such a way that Notary can never learn the unencrypted content of the data which Extension exchanges with Webserver (https://tlsnotary.org/how_it_works).
+
+
+Extension needs to process some data which is NOT sent to any third party but either A) remains inside Extension or B) is sent encrypted to Notary. 
+Chrome webstore policies require us to enumerate exactly what user data gets processed by Extension. None of the items listed below are stored outside Extension or are used to identify the user.
+Here are the data items:
+
+1) Unencrypted HTTP request to Webserver. It never leaves Extension.
+
+2) Encrypted HTTP request to Webserver. It is encrypted using TLS secrets negotiated with Webserver. It is passed to Notary using another Extension-Notary encryption layer. Notary only sees it in an encrypted form and is unable to decrypt it because TLS secrets are never transmitted to Notary.
+
+3) Encrypted HTTP response from Webserver. It never leaves Extension.
+
+4) Extension sends a simple HTTP request to Notary to "ping" it to see if it is online.
+
+5) If Notary is not online, Extension will query tlsnotary.org for a URL of a backup Notary.
+
+6) If the user chooses to export the notarization session, then he will export Unencrypted HTTP request to Webserver and unencrypted HTTP response from Webserver. It will be at the user's discretion if he wants to pass this exported data to a third party.

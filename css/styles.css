@@ -1,0 +1,201 @@
+/* -- custom css for Bootstrap 3.x --*/
+
+/* move special fonts to HTML head for better performance */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:200,300,400,600');
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family:'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+  font-size: 18px;
+}
+
+/* fix bs3 horizontal scrollbar bug */
+.row { margin: 0; padding: 0 }
+
+h1 {
+  font-size:45px; 
+}
+
+img.grayscale {
+    filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 10+, Firefox on Android */
+    filter: gray; /* IE6-9 */
+    -webkit-filter: grayscale(100%); /* Chrome 19+, Safari 6+, Safari 6+ iOS */
+}
+
+.icon-bar {
+   background-color:#fff;
+}
+
+.scroll-down a, .scroll-top a {
+   color:#ffffff;
+}
+
+.scroll-down {
+   position:fixed;
+   bottom:20%;
+   right:0%;
+   color:#0066FF;
+}
+
+.scroll-top {
+  background-color:#66CCFF;
+}
+
+.header .btn-lg {
+   font-size:28px;
+   border-color:#0066FF;
+   padding:15px;
+   background-color:transparent;
+   color:#ffffff;
+}
+
+.header .btn-lg:hover {
+   background-color:#0066FF;
+   color:#777777;
+}
+
+.navbar a {
+  color:#fff;
+  font-size:28px;
+}
+
+.navbar a:visited {
+  background-color:#66CCFF;
+}
+
+.navbar-bold.affix {
+  background-color:#66CCFF;
+}
+
+.navbar-bold {
+  background-color:#66cCFF;
+  font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;
+  outline: 0;
+}
+
+.navbar-bold li a:visited, .navbar-bold li.active {
+  background-color:#66CCFF;
+  outline: 0;
+}
+
+.navbar-bold li a:hover {
+  background-color: #0099FF;
+  outline: 0;
+}
+
+a, a:active, a:focus {
+outline: none;
+text-decoration: none;
+}
+
+.vert {
+  vertical-align: middle;
+  width:100%;
+  padding-top:4%;
+}
+
+.header h1 {
+  font-size:70px;
+  -webkit-text-stroke: 1px rgba(0,0,0,0.1);
+  color:#431a6d;
+  color:#fff;
+  margin-left:-5px;
+  margin-bottom:5px;
+  font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+
+.header .lead {
+  /*color:#eeeeee;*/
+  font-size:25px;
+}
+
+.header {
+  height: 40%;
+  background: #66CCFF url('/img/pt_squares_lg.png') repeat center center fixed;
+}
+
+.pagesigner {
+    background: #ffffff;
+}
+
+.blurb {
+  padding: 120px 0;
+  /* background-color:#fefefe;*/
+}
+
+.blurb .panel {
+  background-color:transparent;
+}
+
+.bright {
+  background: #7fbbda url('/img/bg333.jpg') no-repeat center center fixed; 
+  background-size:70% 70%;
+  color:#fff;
+}
+
+.featurette {
+  background: #545455;
+  padding: 50px 0;
+  color: #ffffff;
+}
+
+.featurette-item {
+  margin-bottom: 15px;
+}
+
+.featurette-item > i {
+  border: 3px solid #ffffff;
+  border-radius: 50%;
+  display: inline-block;
+  font-size: 56px;
+  width: 140px;
+  height: 140px;
+  line-height: 136px;
+  vertical-align: middle; 
+  text-align: center;
+}
+
+.featurette-item > i:hover {
+  font-size: 68px;
+}
+
+.featurette-item a:hover {
+  text-decoration: none;
+}
+
+.callout {
+  color: #ffffff;
+  padding-top:7%;
+  height: 100%;
+  width: 100%;
+  background: url('/img/bg_suburb.jpg') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.gallery {
+  padding: 50px 0;
+}
+
+.call-to-action {
+  /*background: #eeeeee;*/
+  padding: 50px 0;
+}
+
+.call-to-action .btn {
+  margin: 10px;
+}
+
+footer {
+  padding: 100px 0;
+}
+
+.list-inline a:hover {
+  text-decoration: none;
+}
+
+/* -- end custom css for Bootstrap 3.x --*/
